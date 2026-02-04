@@ -1,2 +1,2 @@
 # buildathon
-AI powered payments app to send money to mom
+PingPay: AI powered payments app to send money to mom
