@@ -1,2 +1,2 @@
 # buildathon
-PingPay: AI powered payments app to send money to mom
+PingPay: AI-powered payments app to send USDC to mom
