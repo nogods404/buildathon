@@ -46,12 +46,14 @@ PingPay/
 ## 📦 Tech Stack
 
 **Backend:**
+
 - Node.js + Express
 - SQLite (simple file-based DB)
 - Ethers.js v6 (blockchain interactions)
 - node-telegram-bot-api
 
 **Frontend:**
+
 - React 18
 - Vite
 - TailwindCSS
@@ -59,12 +61,14 @@ PingPay/
 - Lucide Icons
 
 **Blockchain:**
+
 - Arbitrum Sepolia (testnet)
 - USDC ERC-20 transfers
 
 ## 🛠️ Setup
 
 ### Prerequisites
+
 - Node.js 18+
 - npm or yarn
 - Telegram Bot Token (from @BotFather)
@@ -140,18 +144,21 @@ FRONTEND_URL=http://localhost:5173
 ## 🧪 Testing
 
 ### Get Testnet USDC
+
 1. Visit [Circle Faucet](https://faucet.circle.com/)
 2. Select Arbitrum Sepolia
 3. Enter your wallet address
 4. Receive testnet USDC
 
 ### Get Testnet ETH (for gas)
+
 1. Visit [Arbitrum Sepolia Faucet](https://www.alchemy.com/faucets/arbitrum-sepolia)
 2. Enter your wallet address
 
 ## 📊 API Endpoints
 
 ### Transfers
+
 - `POST /api/transfers/parse` - Parse send command
 - `POST /api/transfers/estimate` - Get gas estimate
 - `POST /api/transfers/send` - Execute transfer
@@ -159,18 +166,21 @@ FRONTEND_URL=http://localhost:5173
 - `GET /api/transfers/history/:address` - Get transfer history
 
 ### Wallets
+
 - `GET /api/wallets/demo` - Get demo wallet info
 - `GET /api/wallets/balance/:address` - Get balances
 - `GET /api/wallets/handle/:handle` - Get wallet by Telegram handle
 - `POST /api/wallets/create` - Create wallet for handle
 
 ### Claims
+
 - `GET /api/claims/:token` - Get claim info
 - `POST /api/claims/:token/verify` - Verify and claim
 
 ## 🎯 Demo Mode
 
 The app runs in demo mode with a prefunded wallet. For production:
+
 - Implement proper wallet authentication
 - Add recovery mechanisms for recipient wallets
 - Integrate proper Telegram chat ID storage
